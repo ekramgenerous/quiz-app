@@ -5,7 +5,7 @@
  box-sizing: border-box;
 }
 body { 
-    background-color:rgba(6, 5, 5, 0.929);
+    background-color:rgba(6, 5, 5, 0.852);
 }
 .container {
     width:90%;
@@ -23,11 +23,15 @@ body {
     text-align: left;
 }
 .quiz {
+  width:90%;
+  max-width: 600px;
+  padding: 10px;
 
 }
 .quiz h2{
     font-size: 13px;
     color:rgb(216, 160, 15);
+    padding-left:5px;
 
 }
 .btn-answers{
@@ -38,14 +42,34 @@ body {
     padding:2px;
     margin: 6px 2px;
     text-align: left;
+    cursor: pointer;
+    color:rgb(216, 160, 15);
+    background-color: aliceblue;
+    border-color: transparent;
+    transition: all 0.3;
+
 }
 #next-btn {
     background-color:rgba(6, 5, 5, 0.929);
     color:rgb(216, 160, 15);
-    padding: 5px;
     border-color: transparent;
-    margin:2px 20px 5px;
-    display: block;
+    display:none ;
+    margin: 6px auto 0;
     width:150px;
-    border-radius:2px;
+    padding: 10px;
+    border-radius:4px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 500;
+
 }
+.btn:hover{
+   background-color: black; 
+   color: #ffff;
+  
+}
+
+
+
+ /* background-color: rgb(20, 124, 20); */
+   /* background-color: rgb(182, 24, 24); */
