@@ -7,14 +7,14 @@
 body { 
     background-color:rgba(6, 5, 5, 0.852);
 }
-.container {
+.app {
     width:90%;
     max-width: 600px;
     background-color: #ffff;
     border-radius: 10px;
     margin: 50px auto 0;
 }
-.title {
+.app h1 {
     border-bottom: 2px  solid rgb(154, 149, 149);
     margin:10px 2px 0;
     padding:5px;
@@ -63,13 +63,18 @@ body {
     font-weight: 500;
 
 }
-.btn:hover{
+.btn:hover:not([disabled]){
    background-color: black; 
    color: #ffff;
   
 }
+.btn:disabled {
+ cursor: no-drop;
+}
+.correct {
+    background:rgb(20, 124, 20) ;
 
-
-
- /* background-color: rgb(20, 124, 20); */
-   /* background-color: rgb(182, 24, 24); */
+}
+.incorrect{
+    background:rgb(182, 24, 24);;
+}
